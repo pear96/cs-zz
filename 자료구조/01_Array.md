@@ -59,11 +59,11 @@ String[] weeks = {"월", "화", "수", "목", "금", "토", "일"};
 
 for (int i=0; i<weeks.length; i++) {
     System.out.println(weeks[i]);
-}
+};
 
 for (string day : weeks) {
     System.out.println(day);
-}
+};
 ```
 
 <br>
@@ -149,6 +149,8 @@ arr[2] = new int[1];
   - `arr1.clone()`: arr1을 얕은 복사
 
 ```java
+import java.util.Arrays;
+
 int[] arr1 = new int[]{1, 2, 3, 4, 5};
 int newLen = 10;
 
