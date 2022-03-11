@@ -8,7 +8,7 @@
 
 <br>
 
-### 2. String 타입의 객체를 가지는 Linked List를 선언?
+### 2. `char` 타입의 객체를 가지는 Linked List를 선언?
 
 <br>
 
