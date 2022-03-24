@@ -1,5 +1,7 @@
 # 2. Linked List
 
+## Linked List란
+
 ![LinkedList](https://blog.kakaocdn.net/dn/bqsySc/btqEk1stewE/tnty2kV69c7l45eyUO3Jh0/img.png)
 
 - 양방향 연결 리스트
@@ -44,7 +46,11 @@ LinkedList<Integer> list2 = new LinkedList<Integer>(Arrays.asList(1,2)); // 생�
 
 - `.add(index, value)`: `index`에 `value` 추가
 - `.addFirst(value)`: 맨 앞에 `value` 추가
+  - head pointer를 통해 바로 가능, O(1)
+
 - `addLast(value)`: 맨 뒤에 `value` 추가
+  - head에서부터 마지막까지 탐색하여야 해서 O(n)
+
 
 ```java
 import java.util.LinkedList;
@@ -95,6 +101,31 @@ System.out.println(list.size()); // 3
 
 - `.contains(value)`: `value`가 있다면 `true`를 반환
 - `indexOf(value)`: `value`의 `index` 반환, 없다면 `-1` 반환
+- 탐색 시간 복잡도는 선형 자료구조이므로 O(n)
+
+<br>
+
+### 시간 복잡도
+
+- 같은 길이를 가지는 두 Linked List를 연결
+  - 한 Linked List의 끝에 다른 Linked List를 연결시켜야 함, 끝을 알기 위해 O(n)
+
+<br>
+
+### 이중 연결 리스트
+
+![img](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Doubly_linked_list.png/400px-Doubly_linked_list.png)
+
+- 각각의 포인터가 앞의 노드와 뒤의 노드를 가리킴
+- 단일 연결리스트보다 구현이 어려움
+  - 단일 연결 리스트보다 삽입과 삭제 시에 재연결해줘야 하는 포인터의 수가 많아 구현이 더 어렵고 시간이 더 걸림
+
+### 원형 연결 리스트
+
+- 일반적인 연결 리스트에 마지막 노드와 처음 노드를 연결시켜 원형으로 만든 구조
+- 다음 노드를 가리키는 포인터가 null을 가리키는 경우가 없음
+- CPU 스케줄링 중 모든 프로세스에 균등하고 자원을 반복해서 분배하는 round-robin에 적용될 수 있음
+- head에 노드를 추가할 경우 마지막 노드를 찾아야하므로 시간 복잡도는 O(n)
 
 <br>
 
@@ -102,3 +133,4 @@ System.out.println(list.size()); // 3
 
 - https://coding-factory.tistory.com/552
 - https://psychoria.tistory.com/767
+- https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8#%EC%9D%B4%EC%A4%91_%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8
