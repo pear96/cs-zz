@@ -383,7 +383,6 @@ REST API 설계 시 가장 중요한 항목은 다음의 2가지로 요약할 �
 4. https://velog.io/@ellyheetov/REST-API
 5. https://www.joinc.co.kr/w/man/12/rest/about
 6. https://meetup.toast.com/posts/92
-7. https://github.com/ssafy-tech-concert/ssafy-tech-concert/blob/master/web/REST.md
-8. https://www.joinc.co.kr/w/man/12/rest/about
+7. https://www.joinc.co.kr/w/man/12/rest/about
 8. https://medium.com/@js230023/url-%EA%B3%BC-uri%EC%9D%98-%EC%B0%A8%EC%9D%B4-154d70814d2a
 
