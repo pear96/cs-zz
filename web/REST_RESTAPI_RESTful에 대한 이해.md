@@ -32,9 +32,44 @@
 
 * HTTP URI(Uniform Resource Identifier)를 통해 자원(Resource)을 명시하고, HTTP Method(POST, GET, PUT, DELETE)를 통해 해당 자원에 대한 CRUD Operation을 적용하는 것을 의미한다.
 
-###  cf) URI란?!
+###  cf) URI vs URL란?!
 
 * URI 는 네트워크 상 자원을 가리키는 일종의 고유 식별자(ID) 이다. 즉 인터넷에 있는 자원을 나타내는 유일한 주소
+
+
+
+## 더 알아보기
+
+#### URL /URI
+
+- URI(Uniform resource Identifier) 자원의 위치뿐만 아니라 자원에 대한 고유 식별자로서 URL을 의미를 포함.
+- URL(Uniform Resource Locator) 자원이 실제로 존재하는 위치
+- **URI가 URL의 상위 개념.**
+  (URL이 URI안에 포함. URI 의 하위 개념으로는 URL 말고 URN도 있음.)
+
+#### URL 와URI 구분
+
+- [https://example.com](https://example.com/) 의 경우
+
+  >  [https://example.com](https://example.com/) 이라는 서버를 나타내기 때문에 URL이면서 URI
+
+- https://example.com/skin 의 경우
+
+  >  example 서버의 skin이라는 인터넷상의 자원의 위치를 의미하기에 URL 이면서 URI
+
+- https://example.com/one/two/abc.html 의 경우
+
+  > example 서버의 one/two 디렉토리 아래의 abc.html을 가리키므로 URL이면서 URI
+
+- https://example.com/123 의 경우 
+
+  > 조금 다르다!  여기서 URL은 https://example.com까지이고, 내가 원하는 정보에 도달하기위해 123이라는 식별자가 필요하다.
+  > 즉, URI 이지만 URL은 아닌 것이다.
+
+- https://example.com/one?id=123 의 경우
+
+  > 이것도 마찬가지! URL은 https://example.com/one 까지이고 내가 원하는 정보에 도달하기 위해서는 ?id=123이라는 식별자가 필요한 것이다.
+  > 이것 또한 URI이지만 URL은 아닌것.
 
 
 
@@ -343,18 +378,12 @@ REST API 설계 시 가장 중요한 항목은 다음의 2가지로 요약할 �
 # 참고
 
 1. https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
-
 2. https://yuricoding.tistory.com/79
-
 3. https://velog.io/@somday/RESTful-API-%EC%9D%B4%EB%9E%80
-
 4. https://velog.io/@ellyheetov/REST-API
-
 5. https://www.joinc.co.kr/w/man/12/rest/about
-
 6. https://meetup.toast.com/posts/92
-
 7. https://github.com/ssafy-tech-concert/ssafy-tech-concert/blob/master/web/REST.md
-
 8. https://www.joinc.co.kr/w/man/12/rest/about
+8. https://medium.com/@js230023/url-%EA%B3%BC-uri%EC%9D%98-%EC%B0%A8%EC%9D%B4-154d70814d2a
 
