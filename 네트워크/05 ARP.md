@@ -2,7 +2,7 @@
 
 | 공인 IP                                                     | 사설 IP                                               |
 | ----------------------------------------------------------- | ----------------------------------------------------- |
-| <img src="04 OSI 3계층.assets/image-20220318185742213.png"> | <img src="05 ARP.assets/image-20220403065032548.png"> |
+| <img src="network/image-20220318185742213.png"> | <img src="network/image-20220403065032548.png"> |
 
 - 공인 IP주소는 돈주고 통신사한테 받은 주소, 우리집 안에서 컴퓨터, 핸드폰, 노트북, 태블릿 다 각자 사설 IP 존재
   - 다른 공인 IP라면 사설 IP 주소가 겹칠 수 있다! 그것 때문에 공인, 사설 IP를 나눈 것이니까. (보통 사설 IP는 192.168.X.X 로 구성)
@@ -11,19 +11,19 @@
     - `172.16.0.0 ~ 172.31.255.255`
     - `192.168.0.0 ~ 192.168.255.255`
 
-<img src="05 ARP.assets/image-20220403065835420.png">
+<img src="network/image-20220403065835420.png">
 
 ### 사설 IP에 접근하고싶다면
 
 - 내 노트북에서는 다른 서버에 접속할 수 있지만, 다른 서버에서는 gateway를 거치지 않고 내 노트북으로 바로 올 수 없다.
 
-<img src="05 ARP.assets/image-20220403070045878.png">
+<img src="network/image-20220403070045878.png">
 
 #### 포트포워딩 / DMZ
 
 | 포트포워딩                                            | DMZ                                                   |
 | ----------------------------------------------------- | ----------------------------------------------------- |
-| <img src="05 ARP.assets/image-20220403070348153.png"> | <img src="05 ARP.assets/image-20220403070512398.png"> |
+| <img src="network/image-20220403070348153.png"> | <img src="network/image-20220403070512398.png"> |
 
 #### 고정 IP 와 유동 IP
 
@@ -40,7 +40,7 @@
 
   - DDNS는 동적 ip가 바뀌는걸 감지해서 한 도메인에 할당해주는 것.
 
-    <img src="05 ARP.assets/image-20220403072328772.png">
+    <img src="network/image-20220403072328772.png">
 
 참고 ) https://www.youtube.com/watch?v=GK3h936Co-k&ab_channel=%EC%96%84%ED%8C%8D%ED%95%9C%EC%BD%94%EB%94%A9%EC%82%AC%EC%A0%84
 
@@ -56,9 +56,9 @@ ARP는 같은 네트워크 대역에서 통신을 하기 위해 필요한 MAC주
 
 같은 네트워크 대역에서 통신을 한다고 할지라도 데이터를 보내기 위해서는 7계층부터 캡슐화를 통해 데이터를 보내기 때문에 IP주소와 MAC주소가 모두 필요하다. 이때 IP주소는 알고 MAC주소는 모르더라도 ARP를 통해 통신이 가능하다.
 
-<img src="05 ARP.assets/image-20220403045612906.png">
+<img src="network/image-20220403045612906.png">
 
-<img src="05 ARP.assets/image-20220403045906958.png">
+<img src="network/image-20220403045906958.png">
 
 
 
@@ -80,9 +80,9 @@ ARP는 보안과도 연관이 있는데, ARP spoofing이라는 네트워크 공�
 
 https://blog.naver.com/eqqus/140203319928
 
-| 정상   | <img src="05 ARP.assets/image-20220403051904764.png"> |
+| 정상   | <img src="network/image-20220403051904764.png"> |
 | ------ | ----------------------------------------------------- |
-| 비정상 | <img src="05 ARP.assets/image-20220403051922028.png"> |
+| 비정상 | <img src="network/image-20220403051922028.png"> |
 
 - 정상적으로 PC 사이간에 MAC주소를 통해 패킷을 교환하면 MAC 테이블에 해당 MAC 주소가 저장된다. 
 - 하지만 스니퍼(공격자)가 개입을 하면 
@@ -96,7 +96,7 @@ https://blog.naver.com/eqqus/140203319928
 
 ## ARP 헤더 구조
 
-<img src="05 ARP.assets/image-20220403055100027.png">
+<img src="network/image-20220403055100027.png">
 
 
 
@@ -108,7 +108,7 @@ IP주소로 MAC 주소 알아오는 과정
 
 A가 C에게 통신하고 싶지만 MAC 주소를 모를 때!
 
-<img src="05 ARP.assets/image-20220403062704633.png">
+<img src="network/image-20220403062704633.png">
 
 1. A가 C에게 ARP 요청 만들 때 but 목적지 MAC주소를 모르는데 어떻게?
     => `00:00:00:00:00:00` 으로 해놓고 보낸다.
@@ -120,7 +120,7 @@ A가 C에게 통신하고 싶지만 MAC 주소를 모를 때!
 
   => **BroadCast** (같은 네트워크 대역 전부에게 보내는 것)
 
-<img src="05 ARP.assets/image-20220403063500533.png">
+<img src="network/image-20220403063500533.png">
 
 3. 이렇게 만든 요청을 스위치(2계층)에게 보낸다.
 
@@ -128,7 +128,7 @@ A가 C에게 통신하고 싶지만 MAC 주소를 모를 때!
 
 ​	=> 현재 모든 주소에게 보내라고 왔으니까 같은 네트워크 대역 모두에게 보낸다.
 
-<img src="05 ARP.assets/image-20220403064137943.png">
+<img src="network/image-20220403064137943.png">
 
 4. 같은 네트워크에 속한 모든 단말기에게 ARP가 전달되었다.
 
@@ -140,7 +140,7 @@ A가 C에게 통신하고 싶지만 MAC 주소를 모를 때!
 
       2. 일치하는 경우(C 컴퓨터), 나에게 요청이 온 것이니까 응답 프로토콜을 만들어서 보낸다.(C는 A의 주소를 알고 있으니까 유니캐스트)
 
-<img src="05 ARP.assets/image-20220403064448003.png">
+<img src="network/image-20220403064448003.png">
 
 - 통신했던 컴퓨터들의 주소는 ARP 테이블에 남는다.
 
@@ -148,7 +148,7 @@ A가 C에게 통신하고 싶지만 MAC 주소를 모를 때!
 
 - cmd창에 `arp -a` 라고 쳐보면 볼 수 있다.
 
-  <img src="05 ARP.assets/image-20220403064652225.png">
+  <img src="network/image-20220403064652225.png">
 
   
 
