@@ -147,7 +147,7 @@ public class Test {
 
 ## Binary Tree
 
-- 노드의 최대 브랜치가 2개인 트리
+- 노드의 최대 자식 노드가 2개인 트리
 - Binary Tree와 Binary Search Tree는 같지 않음
 
 ### 용어
@@ -195,7 +195,7 @@ public class Test {
 
 ### 검색 시간
 
-노드 수가 `n`인 이진 트리의 검색 시간 복잡도는 `O(log n). 정렬되어 있어 이진 검색 알고리즘을 사용.
+노드 수가 `n`인 이진 트리의 검색 시간 복잡도는 `O(log n)`. 정렬되어 있어 이진 검색 알고리즘을 사용.
 
 <br>
 
