@@ -22,14 +22,14 @@
 **용도**
 
 - 멀티 태스킹을 위한 프로세스 스케쥴링 방식 구현
+- 넓이 우선 선택(BFS)
+- 컴뷰터 버퍼
+- JavaScript의 Callback Queue
 
 **구현**
 
 - 삽입 및 삭제가 용이한 LinkedList로 구현
   - Java에서 Queue는 인터페이스이므로 객체 생성이 불가능하므로 LinkedList를 형번환하여 조작
-- 넓이 우선 선택(BFS)
-- 컴뷰터 버퍼
-- JavaScript의 Callback Queue
 
 ```java
 import java.util.LinkedList;
@@ -40,7 +40,7 @@ queue.add(1);     // queue에 값 1 추가, 꽉 차있다면 Overflow 에러
 queue.add(2);     // queue에 값 2 추가
 queue.offer(3);   // queue에 값 3 추가
 
-queue.peek();       // queue의 첫번째 값 참조
+queue.peek();     // queue의 첫번째 값 참조
 
 queue.poll();     // queue에 첫번째 값을 반환하고 제거 비어있다면 null
 queue.remove();   // queue에 첫번째 값 제거
@@ -61,7 +61,7 @@ queue.clear();    // queue 초기화
 **용어**
 
 - Push: 스택에 데이터를 넣는 기능
-- Pop: 스택에서 데이터를꺼내는 기능
+- Pop: 스택에서 데이터를 꺼내는 기능
 
 **용도**
 
@@ -93,10 +93,19 @@ stack.clear();     // stack의 전체 값 제거 (초기화)
 
 stack.size();      // stack의 크기 출력 : 2
 
-stack.empty();     // stack이 비어있는제 check (비어있다면 true)
+stack.empty();     // stack이 비어있는지 check (비어있다면 true)
 
 stack.contains(1) // stack에 1이 있는지 check (있다면 true)
 ```
+
+<br>
+
+## 추가
+
+- Stack으로 Queue를 구현하기
+- Circular Queue, Priority Queue
+
+
 
 > 출처
 >
