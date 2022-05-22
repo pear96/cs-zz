@@ -20,9 +20,9 @@
 
 1. 페이로드 없이 패킷만 우선 클라이언트에서 서버로 보낸다.
 
-![TCP 3way handshake_01](network/TCP 3way handshake_01.PNG)
+![tcp_3way_handshake_01](network/tcp_3way_handshake_01.PNG)
 
-![TCP 3way handshake_02](network/TCP 3way handshake_02.PNG)
+![tcp_3way_handshake_02](network/tcp_3way_handshake_02.PNG)
 
 ​	TCP 프로토콜의 모습. 도착지 포트는 80이고, 플래그가 **동기화(sync) 플래그**이며 SEQ 번호와 ACK 번호가 랜덤으로 설정된다.
 
@@ -30,7 +30,7 @@
 
 2. 서버에서 받은 요청을 해석한다. 이때 SEQ번호는 랜덤으로 정해진다.
 
-![TCP 3way handshake_03](network/TCP 3way handshake_03.PNG)
+![tcp_3way_handshake_03](network/tcp_3way_handshake_03.PNG)
 
 ​	참고로 ACK 번호는 비어있다는 뜻에서 0이다.
 
@@ -38,25 +38,25 @@
 
 3. 서버에서 받은 요청을 해석한다. 이후 다시 패킷을 만들어 전달한다. 서버도 승인과 요청을 해야하므로 SYN와 ACK 플래그가 담긴 TCP 프로토콜을 만든다.
 
-![TCP 3way handshake_04](network/TCP 3way handshake_04.PNG)
+![tcp_3way_handshake_04](network/tcp_3way_handshake_04.PNG)
 
-![TCP 3way handshake_05](network/TCP 3way handshake_05.PNG)
+![tcp_3way_handshake_05](network/tcp_3way_handshake_05.PNG)
 
 <br>
 
 4. 클라이언트는 받은 패킷을 해석한다. 이후 ACK(응답) 플래그를 담아 마지막 3단계로 응답을 보낸다.
 
-![TCP 3way handshake_06](network/TCP 3way handshake_06.PNG)
+![tcp_3way_handshake_06](network/tcp_3way_handshake_06.PNG)
 
 <br>
 
 5. 이 응답을 서버가 받으면 연결을 수립하는 과정이 마무리 된다.
 
-![TCP 3way handshake_07](network/TCP 3way handshake_07.PNG)
+![tcp_3way_handshake_07](network/tcp_3way_handshake_07.PNG)
 
 ​	이제 다음으로 요청을 보내는 곳은 어디일까? 클라이언트? 서버?
 
-![TCP 3way handshake_08](network/TCP 3way handshake_08.PNG)
+![tcp_3way_handshake_08](network/tcp_3way_handshake_08.PNG)
 
 정답은 클라이언트이다! 이 과정은 연결을 수립하는 과정이고, 연결이 되고 나서는 클라이언트가 서버에게 원하는 데이터를 보내달라고 요청해야한다. 
 
@@ -89,9 +89,9 @@
 
 1. 클라이언트가 서버에게 요청에 관한 Data가 담긴 패킷을 보낸다.
 
-![TCP 3way handshake_09](network/TCP 3way handshake_09.PNG)
+![tcp_3way_handshake_09](network/tcp_3way_handshake_09.PNG)
 
-![TCP 3way handshake_10](network/TCP 3way handshake_10.PNG)
+![tcp_3way_handshake_10](network/tcp_3way_handshake_10.PNG)
 
 ​	SEQ, ACK 번호를 보면 아까 사용한 번호를 계속 이용하고 있다.
 
@@ -99,13 +99,13 @@
 
 2. 서버가 요청을 받고 원하는 데이터를 담아 패킷을 클라이언트에게 보낸다.
 
-![TCP 3way handshake_11](network/TCP 3way handshake_11.PNG)
+![tcp_3way_handshake_11](network/tcp_3way_handshake_11.PNG)
 
 <br>
 
 3. 클라이언트는 데이터를 잘 받았다고 서버에게 응답을 보낸다.
 
-![TCP 3way handshake_12](network/TCP 3way handshake_12.PNG)
+![tcp_3way_handshake_12](network/tcp_3way_handshake_12.PNG)
 
 
 
@@ -113,7 +113,7 @@
 
 > 패킷을 주고 받을때 SEQ, ACK 번호 말고도 **TCP의 연결 상태**도 변한다.
 
-![TCP 3way handshake_13](network/TCP 3way handshake_13.PNG)
+![tcp_3way_handshake_13](network/tcp_3way_handshake_13.PNG)
 
 
 
@@ -121,7 +121,7 @@
 
 ### 4 way handshake (연결 해제)
 
-![TCP 3way handshake_14](network/TCP 3way handshake_14.PNG)
+![tcp_3way_handshake_14](network/tcp_3way_handshake_14.PNG)
 
 연결 성립 이후, 모든 통신이 끝났다면 연결을 해제해야 한다.
 
