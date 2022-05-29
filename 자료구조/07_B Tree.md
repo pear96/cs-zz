@@ -200,3 +200,5 @@
 > 출처
 >
 > [[자료구조\] 그림으로 알아보는 B-Tree - velog](https://velog.io/@emplam27/자료구조-그림으로-알아보는-B-Tree)
+>
+> https://www.youtube.com/watch?v=WBqKyrL6u-Q
