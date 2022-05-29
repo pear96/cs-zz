@@ -114,7 +114,7 @@ Sec-WebSocket-Accept: s3pPLMBiTxaQ9kYGzzhZRbK+xOo=
 
   
 
-## stomp((Simple Text Oriented Message Protocol) 간단 알아보기
+## stomp(Simple Text Oriented Message Protocol) 간단 알아보기
 
 ### Stomp(Simple Text Oriented Message Protocol)
 
@@ -232,4 +232,4 @@ MESSAGE : 구독. /topic이란 경로를 구독중
 
 7. https://github.com/namusik/TIL-SampleProject/blob/main/websocket/2)%20stomp%20%EA%B0%9C%EB%85%90.md
 
-   ## 
+   
