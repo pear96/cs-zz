@@ -14,7 +14,7 @@
 ### 용어
 
 - key (=자료)
-  - 노드 안에서 항상 정렬된 값ㅇ을 가짐
+  - 노드 안에서 항상 정렬된 값을 가짐
   - 각 key들의 왼쪽 자식들은 항상 key보다 작은 값, 오른쪽 자식들은 항상 key보다 큰 값을 가짐
 
 - M차 B트리: 최대 `M`개의 자식을 가질 수 있는 B 트리
@@ -27,7 +27,7 @@
 
   - 최소차수는 자식수의 하한값을 의미, 최소차수가 `t`라면 `M=2t-1`
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2Fddbae2c9-da94-457d-bad8-77ff6791255b%2FB트리 기본 형태.png)
+![img](07_B Tree.assets/1.jpg)
 
 > 예시) 3차 B Tree
 >
@@ -57,7 +57,7 @@
 
 > 리프노드가 가득 차지 않았다면, 오름차순으로 `k`를 삽입
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2F95b4c5c3-c267-4423-865e-778a68ad4a50%2FB트리 삽입 1-1.png)
+![img](07_B Tree.assets/2.png)
 
 **분할이 일어나는 경우**
 
@@ -69,11 +69,11 @@
    - 왼쪽 키들은 왼쪽 자식으로, 오른쪽 키들은 오른쪽 자식으로 분할
 3. 부모 노드를 검사해서 또 다시 가득 찼다면, 위 과정 반복
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2F4b5003e5-55de-441c-a3ee-15e4db7a2abd%2FB트리 삽입 2-1.png)
+![img](07_B Tree.assets/3.png)
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2F13ab96a4-04cc-42a7-bb01-eac1276bdf67%2FB트리 삽입 2-2.png)
+![img](07_B Tree.assets/4.png)
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2Fd99cdbc8-c5b4-4667-be7d-2589adca45e8%2FB트리 삽입 2-3-165381617916511.png)
+![img](07_B Tree.assets/5.png)
 
 ### 삭제 과정
 
@@ -91,26 +91,26 @@
 
 > 현재 노드의 key 개수가 최소 key 개수보다 크다면 해당 `k`를 단순 삭제
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2Fe0e2045e-33a2-439f-a781-f6f9af8d0b66%2FB트리 삭제 1-1.png)
+![img](07_B Tree.assets/6.png)
 
 > 현재 노드의 key 개수가 최소 key 개수보다 작고, 왼쪽 또는 오른쪽 형제 노드의 key가 최소 key 개수 이상이라면 부모 key 값으로 `k`를 대체
 >
 > 최소키 개수 이상의 키를 가진 형제 노드가 왼쪽 형제라면 가장 큰 값을, 오른쪽 형제라면 가장 작은 값을 부모 key로 대체
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2F8e7b0f78-ae26-48df-8925-47171c588c48%2FB트리 삭제 1-2.png)
+![img](07_B Tree.assets/7.jpg)
 
 > 왼쪽, 오른쪽 형제 노드의 key가 최소 key 개수이고, 부모 노드의 key가 최소 개수 이상이면 `k`를 삭제한 후, 부모 key를 형제 노드와 병합
 >
 > 부모 노드의 key 개수를 하나 줄이고, 자식 수 역시 하나 줄여 B Tree 유지
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2Fdde5e5ae-892c-4d1c-9299-4710023f7531%2FB트리 삭제 1-3.png)
+![img](07_B Tree.assets/8.jpg)
 
-> 자신과 형제, 부모 노드의 key 개수가 모두 최소 key 개수라면 부모 노드를 루트노드로 한 부분 트르이 높이가 줄어드는 경우이므로 재구조화 일어남
+> 자신과 형제, 부모 노드의 key 개수가 모두 최소 key 개수라면 부모 노드를 루트노드로 한 부분 트리의 높이가 줄어드는 경우이므로 재구조화 일어남
 
-**삭제할 key `k`가 내부 노드에 있고, 노드나 자식에 키가 최소 키 개수보다 많을 경우**
+**삭제할 key `k`가 내부 노드에 있고, 노드나 자식의 키가 최소 키 개수보다 많을 경우**
 
 1. 현재 노드의 inorder predecssor 또는 inorder successor와 `k`의 자리를 바꿈
-2. 리프 노드의 `k`를 삭제하게 되면, 리프노드가 삭제되었을 때의 조건으로 변함
+2. 리프 노드의 `k`를 삭제하게 되면, 리프 노드가 삭제되었을 때의 조건으로 변함
 
 **삭제할 key `k`가 내부 노드에 있고, 노드에 key 개수가 최소 key 개수만큼, 노드의 자식 key 개수도 모두 최소 key 개수인 경우**
 
@@ -121,7 +121,7 @@
    - 새로 구성된 인접 형제 노드의 key가 최대 key 개수를 넘어갔다면, 삽입 연산의 노드 분할 과정을 수행
    - 인접 형제 노드가 새로 구성되더라도 원래 `k`의 부모 노드가 최소 key 개수보다 작아진다면, 부모 노드에 대하여 2번 과정부터 다시 수행
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2F84dbc50f-fff4-4207-8e27-a34b9043f798%2FB트리 삭제 3-1.png)
+![img](07_B Tree.assets/9.jpg)
 
 <br>
 
@@ -147,9 +147,9 @@
 
 - 실제 DB의 인덱싱
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2F64290106-d927-4a82-9e08-8e52783c7dd3%2FDB 인덱스.jpg)
+![img](07_B Tree.assets/10.jpg)
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2Fbcbce100-d475-4cda-aebe-946d1813949c%2FB플러스 트리 기본 형태.jpg)
+![img](07_B Tree.assets/11.png)
 
 ### B 트리와 B\+Tree 의 차이점
 
@@ -170,17 +170,17 @@
 
 > 분할이 일어나지 않고, 삽입 위치가 리프노드의 가장 앞 key 자리가 아닌 경우 B Tree 삽입 과정과 동일
 
-> 분할이 일어나지 않고, 삽입 위치가 리프노드의 가장 앞 key 자리인 경우 삽입 후 부모 key를 삽입된 key로 갱신하고, data를 넣어줌
+> 분할이 일어나지 않고, 삽입 위치가 리프노드의 가장 앞 key 자리인 경우, 삽입 후 부모 key를 삽입된 key로 갱신하고, data를 넣어줌
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2Fd69592b9-c14e-4cc5-ad7b-4ea36120035c%2F삽입 2-1.jpg)
+![img](07_B Tree.assets/12.jpg)
 
 > 분할이 일어나는 삽입과정인 경우, 중간 key를 부모 key로 올리지만, 오른쪽 노드에 중간 key를 포함하여 분할
 >
 > 리프 노드는 연결리스트이기 때문에 왼쪽 자식 노드와 오른쪽 자식 노드를 이어줘 연결 리스트 형태를 유지
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2F251a8b34-b943-41c2-9391-3fea1d9a5b29%2F삽입 3-1.jpg)
+![img](07_B Tree.assets/13.png)
 
-![img](https://velog.velcdn.com/images%2Femplam27%2Fpost%2Fd4b9cb28-1b18-4ac1-802c-020dee95ffb9%2F%EC%82%BD%EC%9E%85%203-2.jpg)
+![img](https://velog.velcdn.com/14.png)
 
 ### 삭제 과정
 
@@ -191,9 +191,9 @@
 1. B Tree 의 삭제과정과 동일하게 수행. 단, 리프노드가 병할할 때는 부모 key와 오른쪽 자식의 처음 key가 동일하기 때문에 부모 key를 가져오는 과정만 생략하고 왼쪽 자식과 오른쪽 자식을 병합
 2. 리프 노드의 `k`를 삭제한 후, idnex내의 `k`를 inorder successor로 변경
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2F25579855-5b0f-4cbb-a400-9fb5a5645d0d%2F삭제 2-1.jpg)
+![img](07_B Tree.assets/14.png)
 
-![img](07_B Tree.assets/images%2Femplam27%2Fpost%2F1e256a60-912f-4369-8444-e74c535ecc3c%2F삭제 2-2.jpg)
+![img](07_B Tree.assets/15.png)
 
 <br>
 
