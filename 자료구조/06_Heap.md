@@ -35,8 +35,7 @@
 
 ### 시간 복잡도
 
-- 데이터를 찾을 때 `O(log n)` (배열은 `O(n)`)
-- 삽입할 때 `O(log 2n)` (배열은 `O(n)`)
+- 데이터를 찾을 때 `O(log n)`
 
 ### 구현
 
@@ -110,10 +109,6 @@ int delete_max_heap(){
     return item;
 }
 ```
-
-<br>
-
-## Binary Tree
 
 <br>
 
