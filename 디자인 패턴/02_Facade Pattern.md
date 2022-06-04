@@ -24,7 +24,7 @@ Adapter 패턴과 거의 같은 방식으로 작동하지만 목적이 서로 �
 
 ## 구조
 
-<img src="02_Facade Pattern.assets/scode=mtistory2&fname=http%3A%2F%2Fcfile4.uf.tistory.png">
+<img src="02_Facade Pattern.assets/gujo.png">
 
 ## 코드 예시
 
