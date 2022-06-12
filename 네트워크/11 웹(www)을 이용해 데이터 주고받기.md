@@ -97,7 +97,7 @@
 
 ![image-20220605011124489](network/image-20220605011124489.png)
 
-### Response Line
+### Status Line
 
 ![image-20220605000129494](network/image-20220605000129494.png)
 
@@ -116,7 +116,7 @@
 | 405      | `Method Not Allowed`    | 요청한 메소드는 서버에서 알고 있지만, 제거되었고 사용할 수 없습니다. |
 | 409      | `Conflict`              | 요청이 현재 서버의 상태와 충돌될 때 보냅니다. (주로 중복인 경우 사용함) |
 | 500      | `Internal Server Error` | 서버가 처리 방법을 모르는 상황이 발생했습니다. (주로 Null Pointer Exception.. 백엔드 나와) |
-| 502      | `Bad Gateway`           | 서버가 게이트웨이나 프록시 서버 역할을 하면서 업스트림 서버로부터 유효하지 않은 응답을 받았다는 뜻이다. Nginx를 사용한다면 Nginx로그를 뜯어봐라<br />![How to Fix Nginx 502 Bad Gateway Error on PHP-FPM](https://ibcomputing.com/wp-content/uploads/2018/02/502-bad-gateway-nginx-ubuntu-e1517575959554.png) |
+| 502      | `Bad Gateway`           | 서버가 게이트웨이나 프록시 서버 역할을 하면서 업스트림 서버로부터 유효하지 않은 응답을 받았다는 뜻이다. Nginx를 사용한다면 Nginx 로그를 뜯어봐라<br />![How to Fix Nginx 502 Bad Gateway Error on PHP-FPM](https://ibcomputing.com/wp-content/uploads/2018/02/502-bad-gateway-nginx-ubuntu-e1517575959554.png) |
 | 503      | `Service Unavailable`   | 최대 Session 수를 초과했을때. 과부화 걸림                    |
 
 <br>
