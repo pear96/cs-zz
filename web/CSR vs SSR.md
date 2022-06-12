@@ -14,9 +14,9 @@
 
 
 
-![image-20220403104226814](CSR vs SSR.assets/image-20220403104226814.png)
+![image-20220403104226814](CSRvsSSR.assets/image-20220403104226814.png)
 
-![image-20220403104242732](CSR vs SSR.assets/image-20220403104242732.png)
+![image-20220403104242732](CSRvsSSR.assets/image-20220403104242732.png)
 
 
 
@@ -28,7 +28,7 @@
 
 ### (1) 정의
 
-![image-20220403063845073](CSR vs SSR.assets/image-20220403063845073.png)
+![image-20220403063845073](CSRvsSSR.assets/image-20220403063845073.png)
 
 1. User가 Website 요청을 보냄.
 
@@ -47,7 +47,7 @@
 
 
 
-![image-20220403063927695](CSR vs SSR.assets/image-20220403063927695.png)
+![image-20220403063927695](CSRvsSSR.assets/image-20220403063927695.png)
 
 즉. 서버에서 이미 '렌더 가능한' 상태로 클라이언트에 전달되기 때문에, JS가 다운로드 되는 동안 사용자는 **무언가**를 보고 있을 수 있다.
 
@@ -78,7 +78,7 @@ CF)
 >
 > 즉, 사용자의 요청에 따라 필요한 부분만 응답 받아 렌더링 하는 방식
 
-![image-20220403070835125](CSR vs SSR.assets/image-20220403070835125.png)
+![image-20220403070835125](CSRvsSSR.assets/image-20220403070835125.png)
 
 
 
@@ -100,7 +100,7 @@ CF)
 
 7. API로부터 받아온 data를 placeholder 자리에 넣어준다. 이제 페이지는 상호작용이 가능해진다.
 
-   ![image-20220403072243629](CSR vs SSR.assets/image-20220403072243629.png)
+   ![image-20220403072243629](CSRvsSSR.assets/image-20220403072243629.png)
 
    자바스크립트가 모두 다운로드 된 다음에서야 화면이 보이고, 인터렉션이 가능
 

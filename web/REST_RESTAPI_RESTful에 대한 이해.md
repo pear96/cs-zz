@@ -20,7 +20,7 @@
 
 # REST란?!
 
-![image-20220326170553401](REST_RESTAPI_RESTful에 대한 이해.assets/image-20220326170553401.png)
+![image-20220326170553401](REST_RESTAPI_RESTful에대한이해.assets/image-20220326170553401.png)
 
 ## REST의 정의
 

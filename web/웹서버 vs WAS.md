@@ -55,7 +55,7 @@
 
 ## **동작 방식**
 
-![img](웹서버 vs WAS.assets/images%2Fbky373%2Fpost%2F3eda4400-f179-4991-8c7e-8bc7f804d0d1%2Fimage.png)
+![img](웹서버vsWAS.assets/images%2Fbky373%2Fpost%2F3eda4400-f179-4991-8c7e-8bc7f804d0d1%2Fimage.png)
 
 
 
@@ -83,7 +83,7 @@
 
   > 우아한 테크톡 희봉님의 요약: "상황에 따라 변하는 정보를 제공할 수 있는가?"
 
-![img](웹서버 vs WAS.assets/images%2Fbky373%2Fpost%2F51ed2ed0-5711-4f9f-94e6-74ac9f1d1050%2Fimage.png)
+![img](웹서버vsWAS.assets/images%2Fbky373%2Fpost%2F51ed2ed0-5711-4f9f-94e6-74ac9f1d1050%2Fimage.png)
 
 > [이미지 출처](https://www.youtube.com/watch?v=NyhbNtOq0Bc)
 
@@ -115,7 +115,7 @@
   > `WAS`에는 실제 `Web Application`이 올라가 있기 때문에 외부와 직접 연결이 되어 있다면 중요한 설정 파일이나 리소스들이 외부로 노출될 수 있다.
   > 이를 막기 위해서 **`WEB서버`를 `WAS` 앞단에 배치해서 리소스를 안전하게 보호할 수 있다.**
 
-![img](웹서버 vs WAS.assets/images%2Fbky373%2Fpost%2F178910e8-5768-405c-9979-5bfd15a76d4a%2Fimage.png)
+![img](웹서버vsWAS.assets/images%2Fbky373%2Fpost%2F178910e8-5768-405c-9979-5bfd15a76d4a%2Fimage.png)
 
 
 
@@ -129,7 +129,7 @@
 
   
 
-![img](웹서버 vs WAS.assets/images%2Fbky373%2Fpost%2Fd979aee0-d0d7-4c0b-ae2e-3ce9149b4b94%2Fimage.png)
+![img](웹서버vsWAS.assets/images%2Fbky373%2Fpost%2Fd979aee0-d0d7-4c0b-ae2e-3ce9149b4b94%2Fimage.png)
 
 4. 다른 종류의 WAS로 서비스 가능
 
