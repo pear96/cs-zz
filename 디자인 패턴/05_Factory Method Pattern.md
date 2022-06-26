@@ -239,3 +239,4 @@ class Map {
 }
 ```
 
+[참고 블로그](https://gmlwjd9405.github.io/2018/08/07/factory-method-pattern.html)
