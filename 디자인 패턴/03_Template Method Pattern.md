@@ -12,13 +12,14 @@
   - **행위(Behavioural) 패턴**
     - 객체나 클래스 사이의 알고리즘이나 책임 분배에 관련된 패턴
     - 한 객체가 혼자 수행할 수 없는 작업을 여러 개의 객체로 어떻게 분배하는지, 또 그렇게 하면서도 객체 사이의 결합도를 최소화하는 것에 중점을 두는 패턴
-- <img src="03_Template Method Pattern.assets/template-method-pattern.png">
-  - AbstractClass
-    - 템플릿 메서드를 정의
-    - 하위 클래스에서 공통 알고리즘을 정의하고 하위 클래스에서 구현할 기능을 정의
-  - ConcreteClass
-    - 상속 받은 primitive 메서드 또는 hook 메서드를 구현
-    - 상위 클래스에 구현된 템플릿 메서드의 일반적인 알고리즘에서 하위 클래스에 적합하게 오버라이딩
+<img src="03_Template Method Pattern.assets/template-method-pattern.png">
+
+- AbstractClass
+  - 템플릿 메서드를 정의
+  - 하위 클래스에서 공통 알고리즘을 정의하고 하위 클래스에서 구현할 기능을 정의
+- ConcreteClass
+  - 상속 받은 primitive 메서드 또는 hook 메서드를 구현
+  - 상위 클래스에 구현된 템플릿 메서드의 일반적인 알고리즘에서 하위 클래스에 적합하게 오버라이딩
 
 ## 템플릿 메소드 패턴 장단점
 
