@@ -208,7 +208,7 @@ public class LGMotor extends Motor{
 public abstract class Motor {
   ...
   위와 동일
-
+  
   // HyundaiMotor와 LGMotor의 move 메서드에서 공통되는 부분만을 가짐
   public void move(Direction direction) {
     MotorStatus motorStatus = getMotorStatus();
@@ -323,3 +323,6 @@ public class Main {
 }
 ```
 
+#### 결과
+
+<img src="03_Template Method Pattern.assets/img.png">
