@@ -30,19 +30,19 @@
 
 ### Deadlock 발생의 4가지 조건
 
-*  Mutual exclusion
+*  Mutual exclusion (상호 배제)
 
    *  매 순간 하나의 프로세스만이 자원을 사용할 수 있음
 
-*  No preemption
+*  No preemption (비선점)
 
    *  프로세스는 자원을 스스로 내어놓을 뿐 강제로 빼앗기지 않음
 
-*  Hold and wait
+*  Hold and wait (보유 대기)
 
    *  자원을 가진 프로세스가 다른 자원을 기다릴 때 보유 자원을 놓지 않고 계속 가지고 있음
 
-*  Circular wait
+*  Circular wait (순환 대기)
 
    *  자원을 기다리는 프로세스간에 사이클이 형성되어야 함
 
@@ -64,7 +64,7 @@
    *  Process P = {P1, P2, ... Pn}
    *  Resource R = {R1, R2, ... Rm}
 *  Edge
-   *  request dege Pi > Pj
+   *  request edge Pi > Pj
    *  assignment edge Ri > P i
 
 ![image-20220528161942089](os.assets/image-20220528161942089.png)
